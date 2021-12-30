@@ -12,6 +12,8 @@ dldir = "maps"
 from os.path import join,dirname,basename, normpath
 from os import makedirs
 
+managed_slugs = []
+
 def resolve_slug(slug:str,token:str) -> dict:
     # slug may be rc3_21/lobby/main.json
     url = f"https://visit.rc3.world/@/{slug}"
